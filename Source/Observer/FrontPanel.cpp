@@ -22,7 +22,7 @@ void FrontPanel::Display() const
 {
     std::cout.setf( std::ios::showpoint );
     std::cout.precision(3);
-    std::cout << "Temperature Display: "	<< _temperature << std::endl;
+    std::cout << "Temperature Display: " << _temperature << std::endl;
 }
 
 void FrontPanel::Update(float temperature)

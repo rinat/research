@@ -18,6 +18,6 @@ int _tmain(int argc, _TCHAR* argv[])
     sensor.SetTemperature(25.4f);
     sensor.SetTemperature(29.2f);
 
-	return 0;
+    return 0;
 }
 
