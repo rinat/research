@@ -12,4 +12,5 @@
 
 #include <list>
 #include <iostream>
+#include <algorithm>
 // TODO: reference additional headers your program requires here

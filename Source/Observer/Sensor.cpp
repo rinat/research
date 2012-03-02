@@ -34,11 +34,8 @@ void Sensor::RemoveObserver(IObserver& observer)
 
 void Sensor::NotifyObservers() const
 {
-    for (auto iterator = _observers.cbegin(); _observers.cend() != iterator; ++iterator)
-    {
-        auto observer = *iterator;
-        observer->Update(_temperature);
-    }
+    std::for_each(_observers.cbegin(), _observers.cend(),
+        std::bind2nd(std::mem_fun(&IObserver::Update), _temperature));
 }
 
 }
